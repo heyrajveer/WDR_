@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+     padding-top: 70px;
+}
+
+.head {
+
+    display: flex;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+      top: 0;
+    justify-content: space-between;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    /* grid ka use column me card store krne ke lye hota he 
+    auto fit -> maximum store accrodig to the fit
+    minmax-(250p,1fr)->250px means each card size 
+    1fr->if complete windwo size is 1000px then 4 maximum image can fix */
+    gap: 20px; 
+    /* dono cards ke beechme me space  */
+    padding: 30px 20px 20px 20px;  
+}
+
+.food-card {
+    background: white;
+
+    border-radius: 10px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    /* overflow ka use ccard ka reduis set krte time image overflow hoti he to usko hidden krdeta he  */
+   
+}
+
+.food-card:hover {
+     transform: translateY(-5px) translateX(+2px);
+     /* translation card move up and right side */
+     transition: 0.3s ease;
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    margin: 10px ;
+}
+
+.food-card p {
+    padding-left: 3px;
+    font-size: 16px;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;  
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 100px;
+
+}
+
+nav a:hover {
+    color: orange;
+}
+.menutag{
+margin-left: 30px;
+font-weight: 400;
+font-size:xx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 400px;
+    height: 30vh;
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.youtube{
+    display: flex;
+    justify-content: center;
+}

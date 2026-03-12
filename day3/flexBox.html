@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 300px;
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column-reverse;
+            /* flex-direction: row-reverse; */
+            margin: 20px;
+
+        }
+        .container2{
+            height: 100px;
+            width: 300px;
+            border: 3px solid red;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            flex-direction: row-reverse;
+            margin: 20px;
+
+        }
+        .container3{
+            height: 100px;
+            width: 300px;
+            border: 3px solid red;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            margin: 20px;
+            /* justify-content: space-around,flexstart(default),center,flex-end,space-between,space-evenly; */
+            /* justify-content: space-evernly; */
+            /* align-items: flex-end,center,flex-start(default),stretch; */
+            /* align-items: center; */
+            /* gap: 30px; */
+            /* flex-wrap: nowrap; */
+           
+        }
+
+  .div1{
+    width:  100px;
+    height: 30px;
+    border: 3px solid black;
+    
+   
+  }
+  .div2{
+    width:  100px;
+    height: 30px;
+    border: 3px solid rgb(102, 74, 241);
+   
+  }
+  .div3{
+    width:  100px;
+    height: 30px;
+    border: 3px solid black;
+   
+  }
+  .div4{
+    width: 40px;
+    height: 30px;
+    border: 3px solid black;
+    flex-shrink: 0;
+    align-self: center;
+    
+  }
+  .div5{
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+     flex-grow:2;
+  }
+  .div6{
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+     flex-grow:5;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div class= "container2">
+    <div class="container2">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div>
+    <h1>116*306 =35496</h1>
+    Justify content=main
+    align-item=cross axis
+     <div class="container3">
+        <div class="div4">div1</div>
+        <div class="div5">div2</div>
+        <div class="div6">div3</div>
+    </div>
+
+
+    
+</body>
+</html>

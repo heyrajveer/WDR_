@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+    color: green;
+}
+      /* h1{
+            color:red;     
+       }
+       p{
+        color :blue;
+       } */
+      /* body{
+
+        color: rgb(243, 244, 245);
+         background-image: url("https://images.unsplash.com/photo-1770297346180-6ae7191f0817?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8");
+         /* background-repeat: repeat-x; but isme nhi ho pa rha */
+      /* background-repeat: repeat-y;. */
+      /* background-attachment: fixed;  image will fixed */
+      /* } */
+      h1 {
+        color: red;
+        text-align: center;
+        text-decoration: line-through;
+        text-transform: uppercase;
+      }
+      font {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-variant: small-caps;
+      }
+      p {
+        color: blue;
+        font-size: center;
+        text-align: center;
+        text-indent: 200px; /*  data is start from left side but  */
+        line-height: 30px;
+        border: 3px solid black;
+        margin: 200px; /* only top */
+        margin: 20px 30px 20px 30px; /* top right bottom left */
+        padding: 30px 20px 30px 20px; /* top right bottom left */
+      }
+      ul, ol {
+        /* list-style: none;
+        padding: 0;
+        margin: 0; */
+      }
+      ul {
+        list-style-type: square;
+      }
+      ol {
+        list-style-type: upper-roman;
+      }
+      /* table,td,tr{ border:3px solid red;
+         border-collapse: collapse; 
+        } */
+        table{
+            width: 500px;
+            height: 100px;
+            caption-side: bottom;
+        }
+        tr:nth-child(even){
+            background-color: rgb(0, 124, 178);
+        }
+        tr:hover{
+            background-color: rgb(243, 244, 245);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        div{
+            
+            border: 3px solid red;
+            margin-top:20px ;
+           position: static;  /*  position is fixed nothing will change even adding left right margin  */
+           height: 200px;
+           width: 300px;
+           position: relative;
+           top: 50px;
+           left: 50px;
+            background-image: url("https://plus.unsplash.com/premium_photo-1770719773115-7551ed308cdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8");
+           
+        }
+        .child{
+            border: 3px solid blue ;
+            background-image: none;
+            
+          
+        }
+        .child2{
+             border: 3px solid orange ;
+            position:fixed;    /*position is used to fix the element in a specific position on the screen, regardless of scrolling. It will stay in the same place even when the user scrolls the page. */
+            
+        }
+        .div1{
+            background-color: skyblue;
+            background-image: none;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <font>arpit</font>
+<!-- 
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+      perspiciatis architecto quis accusamus consequatur dolore, aliquam quam,
+      velit nulla illo minima obcaecati aut nam ipsum officia libero corporis,
+      quaerat facere.
+    </p> -->
+     <!-- <p>hello  arpit<p>hello  <span> hey <p>hello world</p></span></p></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt temporibus nostrum quas aliquid blanditiis sunt omnis quia quam, dolorem quasi aspernatur modi debitis reprehenderit ipsum officia maiores enim? Sed?</p> -->
+    <ol> -->
+      <li>Rose</li>
+      <li>Lily</li>
+      <li>Daisy</li>
+      <li>Sunflower</li>
+    </ol>
+    <ul>
+      <li>Rose</li>
+      <li>Lily</li>
+      <li>Daisy</li>
+      <li>Sunflower</li>
+    </ul>
+    
+
+    <table>
+      <caption>
+        Student Data
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Arpit</td>
+        <td>arpit@gmail.com</td>
+        <td>Java</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Arpit</td>
+        <td>arpit@gmail.com</td>
+        <td>Java</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Arpit</td>
+        <td>arpit@gmail.com</td>
+        <td>Java</td>
+        <td>85</td>
+      </tr>
+      
+    </table>
+    <div>
+        hello world
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ullam dignissimos perspiciatis! Vel nulla voluptatum dolorem soluta ex sed ullam ipsum explicabo, quod quasi temporibus voluptas magni nam tenetur laboriosam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quo amet ducimus at iure? Explicabo neque sint voluptates. Impedit, dignissimos sit distinctio nihil non qui aut dicta magni id iure. 
+    </div>
+    <div>parent
+        <div class="child">
+            child
+
+        </div>
+    </div>
+    <div>
+        <div class="child2">
+            child2
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="div1">div 1</div>
+    <div class="div2">div 2</div>
+    <div class="div3">div 3</div>
+      
+  </body>
+
+</html>
