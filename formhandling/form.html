@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="submitHandler(event)">
+    <p><label for="username">User Name</label></p>
+    <input type="text" id="uname" placeholder="enter user name" />
+    <p><label for="password">Password</label></p>
+    <p><input type="password" id="upass" /></p>
+    <p><input type="submit" value="Login" /></p>
+    </form>
+    <script>
+        function submitHandler(event)
+        {
+            event.preventDefault();
+            const name = document.getElementById("uname").value;
+            const pass = document.getElementById("upass").value;
+            if(name==="admin" && pass=="admin@123" )
+        {
+            alert("Valid User");
+        }
+        else
+        {
+            alert("Invalid User");
+        }
+        }
+        </script>
+</body>
+</html>
