@@ -10,7 +10,7 @@ function Parent() {
 
  }
  function disp(){
-    alert("welcome"+" "+ name)
+    alert("welcome"+" "+ info.name)
  }
   return (
     
